@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      saludar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label position="floating">Nombre:</ion-label>
+    <ion-input [(ngModel)]="nombre" placeholder="ingresr nombre"></ion-input>
+  </ion-item>
+
+  <ion-button color="success" (click)="saludar()">
+    saludar
+  </ion-button>
+
+
+  <ion-button  routerLink="/home">home </ion-icon></ion-button>
+
+</ion-content>

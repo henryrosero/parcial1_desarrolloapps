@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/css/ionic.bundle.css"/>
+  <script src="calculator.js"></script>
+  <title>Calculator!</title>
+</head>
+<body onload="onLoad()">
+  <ion-app>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Calculadora</ion-title>
+        <ion-buttons slot="secondary">
+          <ion-button href="index.html?ionic:mode=md">parcial</ion-button>
+        </ion-buttons>
+        <ion-buttons slot="primary">
+          <ion-button href="index.html?ionic:mode=ios">TDSW</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-grid>
+          <ion-col><ion-button color="warning" onclick="add('1')">1</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('2')">2</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('3')">3</ion-button></ion-col>
+          <ion-col><ion-button color="dark" onclick="add('+')">+</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-button color="warning" onclick="add('4')">4</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('5')">5</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('6')">6</ion-button></ion-col>
+          <ion-col><ion-button color="dark" onclick="add('-')">-</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-button color="warning" onclick="add('7')">7</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('8')">8</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('9')">9</ion-button></ion-col>
+          <ion-col><ion-button color="dark" onclick="add('*')">*</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="9"><ion-button color="warning" onclick="add('0')">0</ion-button></ion-col>
+          <ion-col><ion-button color="dark" onclick="add('/')">/</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6"><ion-button color="danger" onclick="del()">reset</ion-button></ion-col>
+          <ion-col><ion-button color="warning" onclick="add('.')">.</ion-button></ion-col>
+          <ion-col><ion-button color="dark" onclick="calc()">=</ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </ion-app>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.display {
+    margin-top: 20px;
+    height: 30px;
+    text-align: right;
+    font-size: 50px;
+  }
+  
+  .bar .title {
+    font-size: 20px !important;
+    text-shadow: 1px 1px 8px black;
+  }
+  
+  .bar-header {
+    font-size: 45px;
+  }
+  
+  .button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px !important;
+  }
+  
+  .operationBtn {
+    background-color: rgb(140, 0, 255) !important;
+  }
+  
+  .calculateBtn {
+    background-color: rgb(119, 0, 255) !important;
+  }
+  
+  .clearBtn {
+    background-color: rgb(218, 198, 23) !important;
+  }
+  
+  .numbersBtn {
+    background-color: rgb(209, 164, 40) !important;
+  }
+  
+  .otherBtns {
+    background-color: rgb(29, 26, 28) !important;
+  }
+  
+  .row {
+    margin: 2px;
+  }
+  
+  p {
+    font-size: 15px;
+  }
